@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    font-weight: bold;
+    color: #4A148C;
+}
+
+a:hover {
+    color: #916DD5;
+}
+
+nav .logo {
+    width: 50px;
+    vertical-align:middle;
+    margin-bottom: 5px;
+}
+
+.brand-logo {
+    font-size: 1.5em !important;
+}
+
+.sidenav {
+    background-image: url(../img/icon/sidenav-logo.png);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.material-icons {
+    display: inline-flex;
+    vertical-align: top;
+}
+
+a.fav {
+    color: white;
+}
+
+.preloader-background {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	
+	position: fixed;
+	z-index: 100;
+	top: 70px;
+	left: 0;
+	right: 0;
+	bottom: 0;	
+}
+
+.preloader-background.hidden {
+    animation: fadeOut 0.3s;
+    animation-fill-mode: forwards;
+}
+
+nav li.active {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    table.tMatches, thead.tMatches, tbody.tMatches{
+        height: 300px;
+    }
+    .tMatches {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .brand-logo {
+        font-size: 1em !important;
+    }
+}
