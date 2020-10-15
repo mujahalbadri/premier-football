@@ -4,37 +4,37 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 if (workbox) {
     console.log('Workbox berhasil dimuat');
     workbox.precaching.precacheAndRoute([
-        { url: '/index.html', revision: '2' },
-        { url: '/nav.html', revision: '2' },
-        { url: '/img/icon/logo-push.png', revision: '2' },
-        { url: '/img/icon/icon-192x192.png', revision: '2' },
-        { url: '/img/icon/icon-512x512.png', revision: '2' },
-        { url: '/css/materialize.min.css', revision: '2' },
-        { url: '/css/style.css', revision: '2' },
-        { url: '/css/Material Icon/Material-icon.css', revision: '2' },
-        { url: '/css/Material Icon/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2', revision: '2' },
-        { url: '/js/materialize.min.js', revision: '2' },
-        { url: '/js/nav.js', revision: '2' },
-        { url: '/js/api.js', revision: '2' },
-        { url: '/js/push.js', revision: '2' },
-        { url: '/js/main.js', revision: '2' },
-        { url: '/js/team.js', revision: '2' },
-        { url: '/js/idb.js', revision: '2' },
-        { url: '/js/db.js', revision: '2' },
-        { url: '/img/icon/logo.png', revision: '2' },
-        { url: '/img/icon/sidenav-logo.png', revision: '2' },
+        { url: 'index.html', revision: '2' },
+        { url: 'nav.html', revision: '2' },
+        { url: 'img/icon/logo-push.png', revision: '2' },
+        { url: 'img/icon/icon-192x192.png', revision: '2' },
+        { url: 'img/icon/icon-512x512.png', revision: '2' },
+        { url: 'css/materialize.min.css', revision: '2' },
+        { url: 'css/style.css', revision: '2' },
+        { url: 'css/Material Icon/Material-icon.css', revision: '2' },
+        { url: 'css/Material Icon/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2', revision: '2' },
+        { url: 'js/materialize.min.js', revision: '2' },
+        { url: 'js/nav.js', revision: '2' },
+        { url: 'js/api.js', revision: '2' },
+        { url: 'js/push.js', revision: '2' },
+        { url: 'js/main.js', revision: '2' },
+        { url: 'js/team.js', revision: '2' },
+        { url: 'js/idb.js', revision: '2' },
+        { url: 'js/db.js', revision: '2' },
+        { url: 'img/icon/logo.png', revision: '2' },
+        { url: 'img/icon/sidenav-logo.png', revision: '2' },
         { url: 'manifest.json', revision: '2' },
     ]);
 
     workbox.routing.registerRoute(
-        new RegExp('/pages/'),
+        new RegExp('pages/'),
         workbox.strategies.staleWhileRevalidate({
             cacheName: 'pages',
         }),
     );
 
     workbox.routing.registerRoute(
-        new RegExp('/team.html'),
+        new RegExp('team.html'),
         workbox.strategies.staleWhileRevalidate({
             cacheName: 'team',
         }),
