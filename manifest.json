@@ -2,7 +2,7 @@
     "name": "Premier Football",
     "short_name": "PremierBall",
     "description": "List Premier League Standing Rank",
-    "start_url": "/index.html",
+    "start_url": "index.html",
     "display": "standalone",
     "background_color": "#4A148C",
     "theme_color": "#4A148C",
